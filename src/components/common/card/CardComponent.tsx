@@ -1,22 +1,22 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import './CardComponent.css'
-import { Button } from "@/components/ui/button"
 import {
   Card,
   CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
 type Props = {
   children: JSX.Element | string;
   bgColor: any,
-  title?: string
+  title?: string,
+  subHeading?: string;
+  footer?: JSX.Element
 }
-export function CardComponent({ children, bgColor, title }: Props) {
+export function CardComponent({ children, bgColor, title, subHeading }: Props) {
   return (
-    <Card className={`w-[350px] card border-0 ${bgColor} cursor-pointer`}
+    <Card className={`w-[300px] card border-0 ${bgColor} cursor-pointer`}
       style={{
         // background: "linear-gradient(135deg, rgba(255, 105, 180, 1) 0%, rgba(255, 0, 150, 1) 100%)"
         //  background: 'linear-gradient(135deg,rgba(160, 181, 215, 0.94) 0%, rgba(159, 180, 249, 0.51) 100%)'
@@ -37,15 +37,11 @@ export function CardComponent({ children, bgColor, title }: Props) {
     >
       <CardHeader>
         <CardTitle>{title}</CardTitle>
-        <CardDescription>Deploy your new project in one-click.</CardDescription>
+        <CardDescription>{subHeading}</CardDescription>
       </CardHeader>
       <CardContent>
         {children}
       </CardContent>
-      <CardFooter className="flex justify-between">
-        <Button variant="outline">Cancel</Button>
-        <Button>Deploy</Button>
-      </CardFooter>
     </Card>
   )
 }

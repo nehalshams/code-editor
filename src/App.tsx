@@ -6,7 +6,7 @@ import './App.css'
 
 const App: React.FC = () => {
   return (
-    <div className=''>
+    <div className='bg-light-gray1 max-h-svh overflow-hidden'>
       <Layout>
         <Router/>
       </Layout>

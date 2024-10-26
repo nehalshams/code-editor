@@ -2,7 +2,6 @@
 
 import * as React from "react"
 import {
-  ColumnDef,
   ColumnFiltersState,
   SortingState,
   VisibilityState,
@@ -13,17 +12,13 @@ import {
   getSortedRowModel,
   useReactTable,
 } from "@tanstack/react-table"
-import { ArrowUpDown, ChevronDown, MoreHorizontal } from "lucide-react"
+import { ChevronDown } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
-import { Checkbox } from "@/components/ui/checkbox"
 import {
   DropdownMenu,
   DropdownMenuCheckboxItem,
   DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
 import { Input } from "@/components/ui/input"
@@ -168,7 +163,7 @@ export type Payment = {
 //   },
 // ]
 
-export function TableComponent({generateColumn}: any) {
+export function TableComponent({generateColumn, data}: any) {
   const [sorting, setSorting] = React.useState<SortingState>([])
   const [columnFilters, setColumnFilters] = React.useState<ColumnFiltersState>(
     []
@@ -200,10 +195,10 @@ export function TableComponent({generateColumn}: any) {
     <div className="w-full">
       <div className="flex items-center py-4">
         <Input
-          placeholder="Filter emails..."
-          value={(table.getColumn("email")?.getFilterValue() as string) ?? ""}
+          placeholder="Filter questions..."
+          value={(table.getColumn("question")?.getFilterValue() as string) ?? ""}
           onChange={(event) =>
-            table.getColumn("email")?.setFilterValue(event.target.value)
+            table.getColumn("question")?.setFilterValue(event.target.value)
           }
           className="max-w-sm"
         />
@@ -274,7 +269,7 @@ export function TableComponent({generateColumn}: any) {
             ) : (
               <TableRow>
                 <TableCell
-                  colSpan={columns.length}
+                  // colSpan={}
                   className="h-24 text-center"
                 >
                   No results.

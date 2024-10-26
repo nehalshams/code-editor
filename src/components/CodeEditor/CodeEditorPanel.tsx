@@ -4,15 +4,20 @@ import {
     ResizablePanelGroup,
   } from "@/components/ui/resizable"
 import CodeEditor from "./CodeEditor"
+import { useState } from "react"
   
   export function CodeEditorPanel() {
+    const [output, setOutput] = useState()
+    const handleShowOutput = (output) => {
+      setOutput(output)
+    }
     return (
       <ResizablePanelGroup
         direction="horizontal"
         className="rounded-lg border md:min-w-[450px]"
       >
         <ResizablePanel defaultSize={50}>
-            <CodeEditor/>
+            <CodeEditor handleShowOutput={handleShowOutput}/>
         </ResizablePanel>
         <ResizableHandle />
         <ResizablePanel defaultSize={50}>
@@ -25,7 +30,7 @@ import CodeEditor from "./CodeEditor"
             <ResizableHandle />
             <ResizablePanel defaultSize={75}>
               <div className="flex h-full items-center justify-center p-6">
-                <span className="font-semibold">Three</span>
+                <span className="font-semibold">{output}</span>
               </div>
             </ResizablePanel>
           </ResizablePanelGroup>

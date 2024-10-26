@@ -32,6 +32,9 @@ export default {
   			md: 'calc(var(--radius) - 2px)',
   			sm: 'calc(var(--radius) - 4px)'
   		},
+		backgroundColor: {
+			'light-gray1': "#f6f6f6"
+		},
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
@@ -82,7 +85,8 @@ export default {
   				'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
   				border: 'hsl(var(--sidebar-border))',
   				ring: 'hsl(var(--sidebar-ring))'
-  			}
+  			},
+			'border-dark': "rgb(159, 159, 159)"
   		}
   	}
   },

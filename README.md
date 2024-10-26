@@ -1,5 +1,32 @@
-# React + TypeScript + Vite
+# TechScript = React + TypeScript + Vite + Shadcn UI + Monaco
 
+### Installation
+  npm install
+### Run dev
+  npm run dev
+
+
+### Setup Monaco
+  - Installation
+    npm install @monaco-editor/react
+  - to set the theme
+    monaco.editor.setTheme('theme-name');
+
+  - to create the theme
+  ```
+      monaco.editor.defineTheme('solarized-light', {
+        base: 'vs',
+        inherit: true,
+        rules: [{ background: 'fdf6e3' }],
+        colors: {
+          'editor.background': '#fdf6e3',
+          'editor.foreground': '#657b83',
+          'editorCursor.foreground': '#073642',
+          'editor.lineHighlightBackground': '#eee8d5',
+        },
+      })
+  ```
+  - 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
