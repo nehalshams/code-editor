@@ -4,11 +4,11 @@ import {
     ResizablePanelGroup,
   } from "@/components/ui/resizable"
 import CodeEditor from "./CodeEditor"
-import { useState } from "react"
+import { SetStateAction, useState } from "react"
   
   export function CodeEditorPanel() {
     const [output, setOutput] = useState()
-    const handleShowOutput = (output) => {
+    const handleShowOutput = (output: SetStateAction<undefined>) => {
       setOutput(output)
     }
     return (

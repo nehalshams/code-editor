@@ -1,5 +1,5 @@
 
-export function themeSetting(themeName, monaco){
+export function themeSetting(monaco: { editor: { defineTheme: (arg0: string, arg1: { base: string; inherit: boolean; rules: { background: string; }[] | { background: string; }[] | { background: string; }[] | { background: string; }[] | { background: string; }[] | { background: string; }[]; colors: { 'editor.background': string; 'editor.foreground': string; 'editor.lineHighlightBackground': string; } | { 'editor.background': string; 'editor.foreground': string; 'editorCursor.foreground': string; 'editor.lineHighlightBackground': string; } | { 'editor.background': string; 'editor.foreground': string; 'editorCursor.foreground': string; 'editor.lineHighlightBackground': string; } | { 'editor.background': string; 'editor.foreground': string; 'editorCursor.foreground': string; 'editor.lineHighlightBackground': string; } | { 'editor.background': string; 'editor.foreground': string; 'editor.lineHighlightBackground': string; } | { 'editor.background': string; 'editor.foreground': string; 'editorCursor.foreground': string; 'editor.lineHighlightBackground': string; }; }) => void; }; }){
 
     monaco.editor.defineTheme('night-owl', {
         base: 'vs-dark',

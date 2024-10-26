@@ -1,8 +1,9 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { Option } from '@/types/global.types';
 import { SelectComponent } from '../common/select/SelectComponent';
 import MonacoEditor from './MonacoEditor';
-import { useState } from 'react';
+import { SetStateAction, useState } from 'react';
 import { Button } from '../ui/button';
 import { StepForward } from 'lucide-react';
 const options: Option[] = [
@@ -11,15 +12,15 @@ const options: Option[] = [
 const CodeEditor = ({ handleShowOutput }: any) => {
     console.log("🚀 ~ CodeEditor ~ handleShowOutput:", handleShowOutput)
     const [theme, setTheme] = useState('');
-    const [code, setCode] = useState();
-    const [output, setOutput] = useState()
+    const [code, setCode] = useState("");
+    const [output, setOutput] = useState("")
     console.log("🚀 ~ CodeEditor ~ output:", output)
-    const handleChangeOption = (option) => {
+    const handleChangeOption = (option: { value: SetStateAction<string>; }) => {
         console.log("🚀 ~ handleChangeOption ~ option:", option)
         setTheme(option.value)
     }
-    const handleEditorChange = (code) => {
-        setCode(code)
+    const handleEditorChange = (code: SetStateAction<string>) => {
+        setCode(code|| "")
     }
     const executeCode = () => {
         console.log('GGGGGGGGGG');
@@ -32,12 +33,12 @@ const CodeEditor = ({ handleShowOutput }: any) => {
         };
 
         try {
-            const result = new Function(code)();
+            const result = new Function(code|| "")();
             console.log("🚀 ~ executeCode ~ result:", result)
             // If there's no console.log output, set the function result as output
             setOutput(outputLog || (result !== undefined ? String(result) : 'Code executed successfully'));
         } catch (error) {
-            setOutput('Error: ' + error.message);
+            setOutput('Error: ');
         } finally {
             // Restore console.log to avoid affecting other logs in the app
             console.log = originalLog;

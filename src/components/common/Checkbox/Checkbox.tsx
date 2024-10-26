@@ -1,10 +1,7 @@
 import { useState } from "react";
 
 
-type Props = {
-    label?: JSX.Element | string;
-}
-export function CheckboxComponent({ label}: Props) {
+export function CheckboxComponent() {
     const [checked, setChecked] = useState(false)
     const handleCheckbox = () => {
         setChecked(!checked)
