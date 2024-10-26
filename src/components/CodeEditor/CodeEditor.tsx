@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Option } from '@/types/global.types';
 import { SelectComponent } from '../common/select/SelectComponent';
 import MonacoEditor from './MonacoEditor';
