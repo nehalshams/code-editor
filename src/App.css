@@ -1,0 +1,151 @@
+#root {
+
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.javascript-gradient {
+  /* background: linear-gradient(35deg, rgba(240,219,79,1) 0%, rgba(231,180,22,1) 50%, rgba(255,213,0,1) 100%) */
+  /* background: linear-gradient(35deg, rgba(255, 255, 204, 1) 0%, rgba(255, 204, 0, 1) 100%); */
+  background: linear-gradient(135deg, rgba(255, 248, 196, 0.9) 0%, rgba(255, 233, 117, 0.8) 100%);
+}
+
+.python-gradient {
+  /* background: linear-gradient(35deg, rgba(53,114,165,1) 0%, rgba(48,99,142,1) 50%, rgba(255,213,0,1) 100%) */
+  /* background: linear-gradient(35deg, rgba(173, 216, 230, 1) 0%, rgba(144, 238, 144, 1) 100%); */
+  /* background: linear-gradient(35deg, rgba(230, 230, 250, 1) 0%, rgba(255, 160, 122, 1) 100%); */
+  /* background: linear-gradient(135deg, rgba(186, 225, 255, 0.9) 0%, rgba(144, 238, 144, 0.6) 100%); */
+  /* background: linear-gradient(135deg, rgba(29, 53, 87, 0.9) 0%, rgba(69, 123, 157, 0.8) 100%); */
+  /* background: linear-gradient(135deg, rgba(17, 34, 64, 0.9) 0%, rgba(43, 87, 117, 0.8) 100%); */
+  /* background: linear-gradient(135deg, rgba(33, 54, 99, 0.9) 0%, rgba(47, 85, 70, 0.8) 100%); */
+  /* background: linear-gradient(135deg, rgba(29, 43, 83, 0.9) 0%, rgba(55, 66, 107, 0.8) 100%); */
+  /* background: linear-gradient(135deg, rgba(47, 79, 79, 0.9) 0%, rgba(22, 60, 57, 0.8) 100%); */
+}
+
+.python-gradient {
+  background: linear-gradient(135deg, rgba(186, 225, 255, 0.9) 0%, rgba(173, 255, 214, 0.7) 100%);
+}
+
+
+.java-gradient {
+  /* background: linear-gradient(35deg, rgba(241,101,40,1) 0%, rgba(235,73,31,1) 50%, rgba(255,176,59,1) 100%) */
+  background: linear-gradient(135deg, rgba(204, 230, 255, 0.9) 0%, rgba(255, 230, 204, 0.8) 100%);
+}
+
+.cpp-gradient {
+  /* background: linear-gradient(35deg, rgba(0,53,128,1) 0%, rgba(0,74,158,1) 50%, rgba(15,125,190,1) 100%) */
+  background: linear-gradient(135deg, rgba(204, 229, 255, 0.9) 0%, rgba(204, 204, 255, 0.8) 100%);
+}
+
+.csharp-gradient {
+  /* background: linear-gradient(35deg, rgba(93,106,157,1) 0%, rgba(58,83,155,1) 50%, rgba(133,141,198,1) 100%) */
+  background: linear-gradient(135deg, rgba(183, 233, 255, 0.9) 0%, rgba(104, 172, 219, 0.7) 100%);
+}
+
+.ruby-gradient {
+  /* background: linear-gradient(35deg, rgba(224,17,95,1) 0%, rgba(197,0,56,1) 50%, rgba(255,71,98,1) 100%) */
+  background: linear-gradient(135deg, rgba(255, 199, 199, 0.9) 0%, rgba(255, 153, 153, 0.8) 100%);
+}
+
+.typescript-gradient {
+  /* background: linear-gradient(35deg, rgba(0,122,204,1) 0%, rgba(0,105,185,1) 50%, rgba(36,197,255,1) 100%) */
+  background: linear-gradient(135deg, rgba(187, 222, 251, 0.9) 0%, rgba(66, 165, 245, 0.7) 100%);
+}
+
+.go-gradient {
+  /* background: linear-gradient(35deg, rgba(0,173,216,1) 0%, rgba(0,152,191,1) 50%, rgba(72,207,255,1) 100%) */
+  background: linear-gradient(135deg, rgba(153, 219, 249, 0.9) 0%, rgba(85, 172, 238, 0.7) 100%);
+}
+
+.swift-gradient {
+  /* background: linear-gradient(35deg, rgba(255,94,58,1) 0%, rgba(235,47,19,1) 50%, rgba(255,143,89,1) 100%) */
+  background: linear-gradient(135deg, rgba(255, 229, 204, 0.9) 0%, rgba(255, 204, 153, 0.8) 100%);
+}
+
+.kotlin-gradient {
+  /* background: linear-gradient(35deg, rgba(240,101,157,1) 0%, rgba(138,63,197,1) 50%, rgba(73,63,252,1) 100%) */
+  background: linear-gradient(135deg, rgba(255, 204, 204, 0.9) 0%, rgba(255, 178, 102, 0.7) 100%);
+}
+
+.php-gradient {
+  /* background: linear-gradient(35deg, rgba(79,93,149,1) 0%, rgba(51,63,125,1) 50%, rgba(105,130,183,1) 100%) */
+  background: linear-gradient(135deg, rgba(221, 221, 238, 0.9) 0%, rgba(204, 204, 255, 0.8) 100%);
+}
+
+.r-gradient {
+  /* background: linear-gradient(35deg, rgba(25,114,209,1) 0%, rgba(15,92,181,1) 50%, rgba(55,159,238,1) 100%) */
+  background: linear-gradient(135deg, rgba(204, 229, 255, 0.9) 0%, rgba(153, 204, 255, 0.7) 100%);
+}
+
+.rust-gradient {
+  background: linear-gradient(35deg, rgba(255, 153, 102, 1) 0%, rgba(255, 102, 51, 0.8) 100%);
+}
+
+.scala-gradient {
+  background: linear-gradient(35deg, rgba(255, 102, 102, 1) 0%, rgba(204, 51, 51, 0.8) 100%);
+}
+
+.perl-gradient {
+  background: linear-gradient(35deg, rgba(153, 204, 255, 1) 0%, rgba(102, 153, 204, 0.8) 100%);
+}
+
+.haskell-gradient {
+  background: linear-gradient(35deg, rgba(204, 153, 255, 1) 0%, rgba(153, 102, 204, 0.8) 100%);
+}
+
+.dart-gradient {
+  background: linear-gradient(35deg, rgba(153, 229, 255, 1) 0%, rgba(102, 204, 255, 0.8) 100%);
+}
+
+.objective-c-gradient {
+  background: linear-gradient(35deg, rgba(200, 200, 200, 1) 0%, rgba(150, 150, 150, 0.8) 100%);
+}
+
+.sql-gradient {
+  background: linear-gradient(35deg, rgba(102, 153, 255, 1) 0%, rgba(51, 102, 204, 0.8) 100%);
+}
+
+.matlab-gradient {
+  background: linear-gradient(35deg, rgba(255, 204, 102, 1) 0%, rgba(255, 153, 51, 0.8) 100%);
+}
+
+.lua-gradient {
+  background: linear-gradient(35deg, rgba(153, 204, 255, 1) 0%, rgba(102, 153, 255, 0.8) 100%);
+}
+.elixir-gradient {
+  background: linear-gradient(35deg, rgba(229, 153, 255, 1) 0%, rgba(204, 102, 255, 0.8) 100%);
+}
+
+.clojure-gradient {
+  background: linear-gradient(35deg, rgba(153, 204, 255, 1) 0%, rgba(102, 153, 255, 0.8) 100%);
+}
+
+.fsharp-gradient {
+  background: linear-gradient(35deg, rgba(153, 204, 255, 1) 0%, rgba(102, 153, 204, 0.8) 100%);
+}
+
+.erlang-gradient {
+  background: linear-gradient(35deg, rgba(255, 153, 153, 1) 0%, rgba(255, 102, 102, 0.8) 100%);
+}
+
+.grid-line{
+  background-size: 20px 20px;
+  background: linear-gradient(0deg,#000,#0000 5%),linear-gradient(270deg,#000,#0000 5%)
+}
+
+.bg-card-global{
+  background: linear-gradient(135deg, rgba(255, 105, 180, 1) 0%, rgba(255, 0, 150, 1) 100%)
+}
